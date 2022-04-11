@@ -72122,13 +72122,13 @@ var InputManager = new Class({
    * @param {WheelEvent} event - The native DOM Wheel event.
    */
   onMouseWheel: function (event) {
-    var mousePointer = this.mousePointer;
-
-    mousePointer.wheel(event);
-
-    this.activePointer = mousePointer;
-
-    this.updateInputPlugins(CONST.MOUSE_WHEEL, this.mousePointerContainer);
+    // var mousePointer = this.mousePointer;
+    //
+    // mousePointer.wheel(event);
+    //
+    // this.activePointer = mousePointer;
+    //
+    // this.updateInputPlugins(CONST.MOUSE_WHEEL, this.mousePointerContainer);
   },
 
   // /**
