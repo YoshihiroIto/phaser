@@ -72112,25 +72112,25 @@ var InputManager = new Class({
     this.updateInputPlugins(CONST.MOUSE_UP, this.mousePointerContainer);
   },
 
-  // /**
-  //  * Processes a mouse wheel event, as passed in by the MouseManager.
-  //  *
-  //  * @method Phaser.Input.InputManager#onMouseWheel
-  //  * @private
-  //  * @since 3.18.0
-  //  *
-  //  * @param {WheelEvent} event - The native DOM Wheel event.
-  //  */
-  // onMouseWheel: function (event) {
-  //   var mousePointer = this.mousePointer;
-  //
-  //   mousePointer.wheel(event);
-  //
-  //   this.activePointer = mousePointer;
-  //
-  //   this.updateInputPlugins(CONST.MOUSE_WHEEL, this.mousePointerContainer);
-  // },
-  //
+  /**
+   * Processes a mouse wheel event, as passed in by the MouseManager.
+   *
+   * @method Phaser.Input.InputManager#onMouseWheel
+   * @private
+   * @since 3.18.0
+   *
+   * @param {WheelEvent} event - The native DOM Wheel event.
+   */
+  onMouseWheel: function (event) {
+    var mousePointer = this.mousePointer;
+
+    mousePointer.wheel(event);
+
+    this.activePointer = mousePointer;
+
+    this.updateInputPlugins(CONST.MOUSE_WHEEL, this.mousePointerContainer);
+  },
+
   // /**
   //  * Processes a pointer lock change event, as passed in by the MouseManager.
   //  *
